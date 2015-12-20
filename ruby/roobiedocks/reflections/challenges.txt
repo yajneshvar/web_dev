@@ -1,0 +1,2 @@
+Is ruby only used for backend development?
+Can I do everything that HTML,CSS,JAVASCRIPT does with ruby?
