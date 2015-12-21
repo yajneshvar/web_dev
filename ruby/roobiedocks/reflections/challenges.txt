@@ -1,2 +1,2 @@
-Is ruby only used for backend development?
-Can I do everything that HTML,CSS,JAVASCRIPT does with ruby?
+Have challenges to manage time properly to allocate time for this Nanodegree.
+New to ruby and web development might take some time to get used to ruby.

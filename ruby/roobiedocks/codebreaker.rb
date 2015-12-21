@@ -25,11 +25,12 @@ code = "M.E?CIQN E?RS, D?NA EQC,IN S,,I Z?TQAM,"
 # All your code should go between these lines!
 # ========================
 
-code = code.slice(1,code.length)
+code[0]=''
 code.insert(11,'A EW? O')
-code = code.gsub(/(Q|\?|\,)/,'')
-puts code.reverse
-
+code.delete!"Q?,"
+code.downcase!
+code.reverse!
+puts code.capitalize
 
 # ========================
 
