@@ -1,9 +1,12 @@
 require 'json'
+require 'date'
 path = File.join(File.dirname(__FILE__), '../data/products.json')
 file = File.read(path)
 products_hash = JSON.parse(file)
 
 # Print today's date
+date = Date.today
+puts "Date: #{date}"
 
 puts "                     _            _       "
 puts "                    | |          | |      "
@@ -43,8 +46,8 @@ brands = Hash.new
       average_price=sales/count
       puts "Average price: #{average_price}"
       # Calculate and print the average discount based off the average sales price
-      average_discount=toy["full-price"].to_f - average_price
-      puts "Average Discount: #{average_discount}"
+      average_discount=(toy["full-price"].to_f - average_price)/toy["full-price"].to_f*100
+      puts "Average Discount: #{average_discount.round(2)}%"
       puts
     end
 
